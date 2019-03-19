@@ -1,5 +1,6 @@
 # Biolab Activity Template
-Template for activities using the p5.beaker library.
+
+This project is a template for activities in the Biolab suite.
 
 ## Getting Started
 
@@ -10,28 +11,43 @@ These instructions will get you a copy of the project up and running on your loc
 * [npm](https://www.npmjs.com/) - Dependency management
 What things you need to install the software and how to install them
 
-```
-Give examples
-```
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+Either recursively clone the template:
 
-Say what the step will be
-
-```
-Give the example
+``` 
+git clone --recursive https://github.com/CMUEberlyCenter/biolab-activity-template.git
 ```
 
-
+or, clone the project and then initialize and fetch the configuration submodule:
 
 ```
-git submodule add https://github.com/CMUEberlyCenter/biolab-config.git conf
-git submodule update --init
+git clone https://github.com/CMUEberlyCenter/biolab-activity-template
+cd biolab-activity-template
+git submodule update --init conf/
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+Install dependencies from npm:
+
+```
+npm i
+```
+
+Now that the config update dependencies are installed, do a config update and another install in case anything new came from upstream:
+
+```
+npm run build:conf
+npm i
+```
+
+Start the dev server and see a skeleton program running:
+
+```
+npm run start
+```
+
+and point your browser at the URL it tells you (probably [localhost:8080](http://localhost:8080))
 
 ## Running the tests
 
