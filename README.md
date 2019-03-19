@@ -4,7 +4,7 @@ This project is a template for activities in the Biolab suite.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+As this project is designed to be a template for a Biolab activity, these instructions will have you create a new activity repo, then get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 
@@ -12,18 +12,28 @@ git and [npm](https://www.npmjs.com/) must be installed and are assumed to be in
 
 ### Installing
 
-Either recursively clone the template:
+On your local machine, create a new activity directory (e.g.: biolab-activity-strong-vs-weak-acid-disassociation) and initialize it as a git repo:
 
 ``` 
-git clone --recursive https://github.com/CMUEberlyCenter/biolab-activity-template.git
+mkdir biolab-activity-strong-vs-weak-acid-disassociation
+cd biolab-activity-strong-vs-weak-acid-disassociation
+git init
 ```
 
-or, clone the project and then initialize and fetch the configuration submodule:
+Pull the source from project and then initialize and fetch the configuration submodule:
 
 ```
-git clone https://github.com/CMUEberlyCenter/biolab-activity-template
-cd biolab-activity-template
+git pull https://github.com/CMUEberlyCenter/biolab-activity-template
 git submodule update --init conf/
+```
+
+Create a new repository on GitHub.
+
+Add your new repo as the origin of your local repo and push everything there:
+
+```
+git remote add origin git-url-of-the-new-repo-you-created
+git push -u origin master
 ```
 
 Install dependencies from npm:
