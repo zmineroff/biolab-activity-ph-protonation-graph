@@ -1,0 +1,9 @@
+body {
+    background: #fff;
+    min-width: 343px;
+}
+#beaker {
+    margin: auto;
+    padding: 20px 0;
+    width: 343px;
+}
