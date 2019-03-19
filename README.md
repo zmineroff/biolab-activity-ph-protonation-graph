@@ -8,7 +8,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-[npm](https://www.npmjs.com/) must be installed and is assumed to be in your path.
+git and [npm](https://www.npmjs.com/) must be installed and are assumed to be in your path.
 
 ### Installing
 
