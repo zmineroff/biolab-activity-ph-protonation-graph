@@ -111,4 +111,4 @@ same directory. They can be served by any standard webserver or
 
 * **Meg Richards** - *Initial work* - [merichar](https://github.com/merichar)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/CMUEberlyCenter/biolab-activity-template/contributors) who participated in this project.
