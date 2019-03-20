@@ -2,6 +2,8 @@
 
 This project is a template for activities in the Biolab suite.
 
+![Travis (.org)](https://img.shields.io/travis/CMUEberlyCenter/biolab-activity-template.svg)
+
 ## Getting Started
 
 As this project is designed to be a template for a Biolab activity, these instructions will have you create a new activity repo, then get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
