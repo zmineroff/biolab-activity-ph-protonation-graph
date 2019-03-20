@@ -27,7 +27,7 @@ git pull https://github.com/CMUEberlyCenter/biolab-activity-template
 git submodule update --init conf/
 ```
 
-Create a new repository on GitHub.
+Open a browser, go to GitHub, and create a new repository for the activity (naming convention is biolab-activity-something).
 
 Add your new repo as the origin of your local repo and push everything there:
 
