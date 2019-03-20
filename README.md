@@ -12,11 +12,11 @@ git and [npm](https://www.npmjs.com/) must be installed and are assumed to be in
 
 ### Installing
 
-On your local machine, create a new activity directory (e.g.: biolab-activity-strong-vs-weak-acid-disassociation) and initialize it as a git repo:
+On your local machine, create a new activity directory (e.g.: biolab-activity-strong-vs-weak-acid-dissociation) and initialize it as a git repo:
 
 ``` 
-mkdir biolab-activity-strong-vs-weak-acid-disassociation
-cd biolab-activity-strong-vs-weak-acid-disassociation
+mkdir new-activity-name
+cd new-activity-name
 git init
 ```
 
@@ -32,7 +32,7 @@ Open a browser, go to GitHub, and create a new repository for the activity (nami
 Add your new repo as the origin of your local repo and push everything there:
 
 ```
-git remote add origin git-url-of-the-new-repo-you-created
+git remote add origin git-url-of-new-activity-repo
 git push -u origin master
 ```
 
