@@ -1,7 +1,7 @@
 {
   "scripts": {
     "doc": "jsdoc --configure jsdoc.config.js",
-    "test": "jest --projects jest.config.js",
+    "test": "npm run test:coverage",
     "test:coverage": "jest --projects jest.config.js --coverage --no-cache --debug",
     "test:watch": "jest --projects jest.config.js --watch",
     "build": "npm run build:prod",
