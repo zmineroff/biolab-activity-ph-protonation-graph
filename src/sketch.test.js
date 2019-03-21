@@ -1,5 +1,5 @@
-import {default as P5} from 'p5';
 import Beaker from 'p5.beaker/beaker.js';
+import {default as P5} from 'p5';
 import Proton from 'p5.beaker/proton.js';
 import Sketch from './sketch.js';
 
@@ -12,17 +12,19 @@ test('sketch exists',() => {
     p5_sketch = new P5(Sketch,'beaker');
     expect(p5_sketch).toBeDefined();
 });
-test('sketch setup completes',() => {
-    const spy = jest.spyOn(p5_sketch, 'setup');
-    p5_sketch.setup();
+const expect_return_restore = function(spy) {
     expect(spy).toHaveReturned();
     spy.mockRestore();
+};
+test('sketch setup completes',() => {
+    const spy = jest.spyOn(p5_sketch,'setup');
+    p5_sketch.setup();
+    expect_return_restore(spy);
 });
 test('sketch draw completes',() => {
-    const spy = jest.spyOn(p5_sketch, 'draw');
+    const spy = jest.spyOn(p5_sketch,'draw');
     p5_sketch.draw();
-    expect(spy).toHaveReturned();
-    spy.mockRestore();
+    expect_return_restore(spy);
 });
 
 let beaker = null;
@@ -33,5 +35,5 @@ test('beaker exists',() => {
 test('add protons to beaker',() => {
     expect(beaker.particles).toEqual({});
     beaker.addParticles(Proton,2);
-    expect(beaker.particles['Proton']['sprites'].length).toEqual(2);
+    expect(beaker.particles['Proton']['sprites']).toHaveLength(2);
 });
