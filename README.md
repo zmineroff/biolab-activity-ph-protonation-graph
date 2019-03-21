@@ -3,6 +3,7 @@
 This project is a template for activities in the Biolab suite.
 
 ![Travis (.org)](https://img.shields.io/travis/CMUEberlyCenter/biolab-activity-template.svg)
+![Coveralls github](https://img.shields.io/coveralls/github/CMUEberlyCenter/biolab-activity-template.svg)
 
 ## Getting Started
 
