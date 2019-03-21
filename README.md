@@ -2,9 +2,9 @@
 
 This project is a template for activities in the Biolab suite.
 
-![Travis (.org)](https://img.shields.io/travis/CMUEberlyCenter/biolab-activity-template.svg)
-![Coveralls github](https://img.shields.io/coveralls/github/CMUEberlyCenter/biolab-activity-template.svg)
-![Code Climate maintainability](https://img.shields.io/codeclimate/maintainability/CMUEberlyCenter/biolab-activity-template.svg)
+![Travis (.org)](https://img.shields.io/travis/CMUEberlyCenter/biolab-template.svg)
+![Coveralls github](https://img.shields.io/coveralls/github/CMUEberlyCenter/biolab-template.svg)
+![Code Climate maintainability](https://img.shields.io/codeclimate/maintainability/CMUEberlyCenter/biolab-template.svg)
 
 ## Getting Started
 
@@ -27,7 +27,7 @@ git init
 Pull the source from project and then initialize and fetch the configuration submodule:
 
 ```
-git pull https://github.com/CMUEberlyCenter/biolab-activity-template
+git pull https://github.com/CMUEberlyCenter/biolab-template
 git submodule update --init conf/
 ```
 
@@ -182,4 +182,4 @@ same directory. They can be served by any standard webserver or
 
 * **Meg Richards** - *Initial work* - [merichar](https://github.com/merichar)
 
-See also the list of [contributors](https://github.com/CMUEberlyCenter/biolab-activity-template/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/CMUEberlyCenter/biolab-template/contributors) who participated in this project.
