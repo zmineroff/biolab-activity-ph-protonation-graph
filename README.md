@@ -87,7 +87,7 @@ repo pages. No additional configuration is required.
 
 [Code Climate](https://codeclimate.com/github/repos/new) - Code maintainability
 
-Update the shield links in the new activity's `README.md`. The links
+**Update the shield links** in the new activity's `README.md`. The links
 should change from using this template's project to that of the new
 activity's project. Finally, commit those changes and push them to
 GitHub.
