@@ -226,6 +226,12 @@ can use the following to lint files within the `src` directory:
 ```
 npx eslint src/
 ```
+Linting style is done with stylelint. This is also integrated with 
+webpack. Use the following to explicitly lint style files in `src`:
+
+```
+npx stylelint --config stylelint.config.js src/
+```
 
 ## Deployment
 
