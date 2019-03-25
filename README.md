@@ -2,9 +2,10 @@
 
 This project is a template for activities in the Biolab suite.
 
-![Travis (.org)](https://img.shields.io/travis/CMUEberlyCenter/biolab-template.svg)
-![Coveralls github](https://img.shields.io/coveralls/github/CMUEberlyCenter/biolab-template.svg)
-![Code Climate maintainability](https://img.shields.io/codeclimate/maintainability/CMUEberlyCenter/biolab-template.svg)
+![Travis (.org)](https://flat.badgen.net/travis/CMUEberlyCenter/biolab-template)
+![Coveralls github](https://flat.badgen.net/coveralls/c/github/CMUEberlyCenter/biolab-template)
+![Code Climate maintainability](https://flat.badgen.net/codeclimate/maintainability/CMUEberlyCenter/biolab-template)
+![Code Climate technical debt](https://flat.badgen.net/codeclimate/tech-debt/CMUEberlyCenter/biolab-template)
 
 ## Getting Started
 
@@ -26,7 +27,7 @@ convention is biolab-activity-something, e.g.:
 biolab-activity-strong-vs-weak-acid-dissociation. Then, initialize it
 as a git repo:
 
-``` 
+```
 mkdir new-activity-name
 cd new-activity-name
 git init
@@ -74,7 +75,11 @@ Now, point your browser at the URL it tells you (probably [localhost:8080](http:
 
 ### Configuring hosted CI services
 
-Biolab activities should follow the model of this template by having tested, maintainable code. Login via your GitHub account to the following services and enable the new activity's repository in each. The links below will take you directly to the respective add repo pages. No additional configuration is required.
+Biolab activities should follow the model of this template by having
+tested, maintainable code. Login via your GitHub account to the
+following services and enable the new activity's repository in
+each. The links below will take you directly to the respective add
+repo pages. No additional configuration is required.
 
 [Travis CI](https://travis-ci.org/account/repositories) - Continuous integration build and testing
 
