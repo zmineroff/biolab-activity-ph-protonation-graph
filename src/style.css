@@ -4,11 +4,17 @@ body {
 }
 
 #beaker {
-    float: left;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
 }
 
 #graph {
-    float: left;
+    position: absolute;
+    top: 5px;
+    left: 150px;
 }
 
 /* Particle table */
@@ -53,8 +59,9 @@ input[type="range"] {
     height: 25px;
     transform: rotate(270deg);
     position: absolute;
-    top: 195px;
-    left: 230px;
+    top: 200px;
+    left: -100px;
+    visibility: visible;
 }
 
 input[type="range"]::-moz-range-track {
@@ -73,28 +80,32 @@ input[type="range"]::-moz-range-track {
 
 #hph-label {
     position: absolute;
-    left: 420px;
-    top: 5px;
+    left: 90px;
+    top: 10px;
+    visibility: visible;
 }
 
 #high-label {
     position: absolute;
-    left: 420px;
-    top: 32px;
+    left: 90px;
+    top: 37px;
+    visibility: visible;
 }
 
 #low-label {
     position: absolute;
-    left: 420px;
-    top: 332px;
+    left: 90px;
+    top: 337px;
+    visibility: visible;
 }
 
 /* pH input */
 #ph {
     position: absolute;
-    left: 410px;
-    top: 200px;
+    left: 80px;
+    top: 205px;
     width: 55px;
+    visibility: visible;
 }
 
 input::-webkit-outer-spin-button,
