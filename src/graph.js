@@ -17,7 +17,7 @@ var fractionProtonated = function() {
 
 var updateRate = 1000;
 var cnt = 0;
-var maxCnt = 100;
+var maxCnt = 10000;
 var interval = setInterval(() => {
 
     Plotly.extendTraces('graph',{
@@ -55,7 +55,7 @@ export default function Graph(element) {
                      },
                      "data": [
                          {"line": {"width": 4},
-                          "marker": {"color": 'gray',"size": 8},
+                          "marker": {"color": 'rgb(180,180,180)',"size": 8},
                           "mode": 'lines',
                           "y": [1].map(fractionProtonated)}
                      ],
