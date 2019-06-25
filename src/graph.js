@@ -15,7 +15,9 @@ var fractionProtonated = function() {
     return numAcids/numConjugateBases;
 }
 
+var updateRate = 1000;
 var cnt = 0;
+var maxCnt = 100;
 var interval = setInterval(() => {
 
     Plotly.extendTraces('graph',{
@@ -29,15 +31,15 @@ var interval = setInterval(() => {
             }
         },{
             "transition": {
-                "duration": 500,
+                "duration": 250,
                 "easing": 'cubic-in-out'
             }
         })
     }
 
     cnt += 1;
-    if (cnt === 100) clearInterval(interval);
-},1000);
+    if (cnt >= maxCnt) clearInterval(interval);
+},updateRate);
 
 /**
  * A beaker/particle container.
