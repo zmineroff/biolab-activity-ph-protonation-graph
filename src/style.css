@@ -7,6 +7,10 @@ body {
     float: left;
 }
 
+#graph {
+    float: left;
+}
+
 /* Particle table */
 #particle-table {
     position: absolute;
