@@ -3,6 +3,7 @@
  *   Acts as a particle container and manages particle groups.
  * @copyright Carnegie Mellon University 2018
  * @author mouse@cmu.edu (Meg Richards)
+ * @author zmineroff@cmu.edu (Zach Mineroff)
  */
 
 import {numAcids,numConjugateBases} from './sketch.js';
@@ -10,7 +11,7 @@ import Plotly from 'plotly.js-basic-dist';
 
 /** @module graph */
 
-var rand = function() {
+var fractionProtonated = function() {
     return numAcids/numConjugateBases;
 }
 
@@ -18,7 +19,7 @@ var cnt = 0;
 var interval = setInterval(() => {
 
     Plotly.extendTraces('graph',{
-        "y": [[rand()]]
+        "y": [[fractionProtonated()]]
     },[0])
 
     if (cnt > 10) {
@@ -54,7 +55,7 @@ export default function Graph(element) {
                          {"line": {"width": 4},
                           "marker": {"color": 'gray',"size": 8},
                           "mode": 'lines',
-                          "y": [1].map(rand)}
+                          "y": [1].map(fractionProtonated)}
                      ],
                      "frames": [],
                      "layout": {
